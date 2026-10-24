@@ -5,4 +5,4 @@ def apply_coupon(total: int, discount: int) -> int:
     """Apply a nonnegative discount without allowing a negative checkout total."""
     if total < 0 or discount < 0:
         raise ValueError("total and discount must be nonnegative")
-    return max(0, total - discount)
+    return total - discount
